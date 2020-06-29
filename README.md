@@ -3,7 +3,7 @@
 
 The following has been prepared to respond to the technical section of the RfQ released by ACME Corporation who are seeking a vendor for the development of a marketplace web application using Rails for one of its product lines. 
 
-### Q1. Describe the architecture of a typical Rails application
+## Q1. Describe the architecture of a typical Rails application
 
 A typical Rails application is built using the MCV framework (MVC meaning Model, View and Controller) and the Ruby programming language. The relationship between the Model, View and Controller is known as the Request-Response Cycle which also uses a router to store pathways (URI's or Uniform Resource Identifier's) for each Controller action. To better understand the concept we need to describe the role of each:
 
@@ -25,14 +25,14 @@ The View renders human readable information to the Controller which then passes 
 
 Rails' philosophy which prefers convention over configuration means it creates a more productive and effective environment for web development, therefore saving time and money in production. Rails MVC architecture and DRY principals (Don't Repeat Yourself) are also efficient for debugging and maintaining an application. Rails also provides many smart helper methods which allow developers to easily grant authorisation and access permissions to users, making it a powerful framework to develop secure applications. 
 
-###### Visual Representation of the MVC Framework
+### Visual Representation of the MVC Framework
 
 ![MVC Framework](./docs/mvc-framework.png)
 
 [Image Source - Understanding Models, Views and Controllers - betterexplained.com](https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/)
 
 
-### Q2. Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database
+## Q2. Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database
 
 A commonly used database management system in web applications, including Rails, is PostgreSQL. There are many advantages to using PostgreSQL, one is that it allows for full customisation of databases such as defining data types, index functions, table inheritances and choice of programming languages. Another advantage is its ability to run different parts of a program separately as it uses Multi-version Concurrency Control (MVCC). Concurrency in computer science defines the ability of a program to run tasks or algorithms separately without breaking other parts of the program. 
 
@@ -42,7 +42,7 @@ Despite the many advantages of PostgreSQL there are still a few cons to using it
 
 Overall, the powerful and extensive components of PostgreSQL and its popularity amongst developers make it a database management system of choice, and its attributes should definitely be considered when selecting a database management system especially when building large applications with relational databases.    
 
-### Q3. Discuss the implementation of Agile project management methodology	
+## Q3. Discuss the implementation of Agile project management methodology	
 
 Agile project management is based on the method of separating individual tasks of a project and allocating these tasks to different teams. Agile methodologies involve consultancy with the client at the start of each project and at completion of each stage, this allows for continuous improvement throughout each stage based on the client's feedback. The classic method of presenting a final product without consulting a client through the various stages of a project could result in a loss of production and budget due to the client potentially requiring major changes to the project. 
 
@@ -52,12 +52,12 @@ When deciding on an Agile methodology one that is most popular amongst teams is 
 
 Agile project management has been largely adopted by web development compagnies as not only does it meet a client's demands, increases productivity and project completion timeframes but it also has proven to be a successful project management tool which produces better software.
 
-###### Visual Representation of the Agile Scrum Process
+### Visual Representation of the Agile Scrum Process
 
 ![Agile Scrum Process](./docs/agile-scrum-process.jpg)
 [Image Source - What is Scrum? ics.ie](https://www.ics.ie/news/view/1653)
 
-### Q4. Provide an overview and description of a standard source control workflow
+## Q4. Provide an overview and description of a standard source control workflow
 
 Standard source control workflow allows to save changes to a file and different versions of a project over time. 
 
@@ -67,18 +67,18 @@ Source control enables us to revert back to previously saved versions of our fil
 
 Source control is an effective way for each team members to work on their allocated tasks without interrupting the overall progress of a project. As team members progress through their tasks they are able to work on their files within their local repository (working file) and commit their changes to the remote repository (server) at any time. When changes or new features are ready to be merged to the master branch a pull request is made and changes must be reviewed and accepted into the remote master branch. 
 
-##### Visual Representation of Githubs Source Control
+### Visual Representation of Githubs Source Control
 
 ![Github Source Control](./docs/github-source-control.png)
 [Image Source - Trailhead.salesforce.com](https://trailhead.salesforce.com/en/content/learn/projects/develop-app-with-salesforce-cli-and-source-control/add-salesforce-dx-project-to-source-control)
 
-### Q5. Provide an overview and description of a standard software testing process 
+## Q5. Provide an overview and description of a standard software testing process 
 
 Software testing plays a crucial role in the quality of any software or developed application. Deploying untested software to production could potentially cause major losses to a client's revenue or potentially create risks to its users. If we take the example of malfunctioning medical softwares these could potentially be life threatening to patients or on the other hand underperforming ecommerce websites could discourage clients from buying and therefore cause losses to a business owner. These are valid reasons why software testing cannot be overlooked and must be implemented during every stage of software development.
 
 There are many forms of software testing processes which can be either automated or manual. Manual testing is a standard form of a software testing process. It involves several phases in which a tester performs various tasks as the end-user of a product and evaluates if a software is ready to run through to the production phase or if malfunctions need to be addressed. At the start of the manual testing process the tester will analyse the intended use of a software and how it should perform as per its requirements. The tester then implements a testing plan and creates a list of test cases which will be manually tested without any automation tools. Test cases are then executed and any defects are logged and sent back to the production team for fixing. The process of manual testing can be tedious as it is designed to cover almost all functions of a software, however the advantages of manual testing is that it is designed to ensure the end product will run as required and without error so as to provide quality working products to a client.
 
-### Q6. Discuss and analyse requirements related to information system security and how they relate to the project
+## Q6. Discuss and analyse requirements related to information system security and how they relate to the project
 
 When developing any software or application, developers must analyse the three most common elements of information system security which are: confidentiality, integrity and availability. Information Sytems Security, also referred to as INFOSEC, is the process which ensures the integretity of information made available to users in any software or web application. It also determines user access to protect an application from potential threats such as theft of private information or installation of malicious software. Through information system security a developer will determine access controls to prevent any unauthorised use of an application and also protect sensitive data.
 
@@ -121,7 +121,7 @@ The following helper methods will assist in securing our Marketplace application
 
 More information on Rails security helpers or gems is available on the full Rails guide (available online - https://guides.rubyonrails.org/security.html). It is important stay up to date with the latest Rails documentation which advises of any new features or bug fixes.
 
-### Q8. Research what your legal obligations are in relation to handling user data and how they can be met for the project
+## Q8. Research what your legal obligations are in relation to handling user data and how they can be met for the project
 
 How customer and end-user's information or data is protected plays a major role in the success of an application. The legal obligation of a developer when handling user data is to provide the client with a secure application that does not leave a user's information susceptible to attack or compromise, this involves data encryption and general security of an application. Developers must also comply with a given country's laws if an application will be accessible by citizens of that country. In order to comply with these legal obligations the following best practices are recommended when building an application which will handle user data:
 
@@ -132,7 +132,7 @@ How customer and end-user's information or data is protected plays a major role 
 * Maintain a clean and updated database, making sure to remove any user's personal information when they delete their account or when business has been closed or sold.
 * Follow all security protocols to limit liability in the event of a security breach. This involves rigorous testing of the application's security prior to sending it to production.  
 
-### Q9. Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+## Q9. Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
 Relational databases are a very effective way of creating databases by storing data points that relate to one another within model tables. These tables are organised into columns which each store one data type per row (e.g: string, boolean, integer) and rows which store data instances. Relational databases provide a flexible and structured way of storing and accessing data within an application. 
 
@@ -146,48 +146,48 @@ Overall aspect and structure of a relational database:
 * Each table consists of a unique primary key (table ID) and can contain foreign key(s)
 * Joining tables create relationships between tables (creating has_one, has_many or belongs_to relationships)
 
-### Q10. Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
+## Q10. Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
 The concept of data integrity is to ensure that all data stored within a relational database model is recorded exactly as intended. Data integrity is not to ensure the security of data through authorisations, instead its purpose is to avoid any unintended changes to data. Unintended changes could be of malicious intent, could result from unexpected crash or failure of hardware used to build an application or could occur because of a human error. In the case of data integrity aspects of the relational database model, rules are applied to define the relationship between models and what data they are able to access from other tables within the database schema. 
 
 Data integrity in a relational database can be enforced by a series of rules or constraints which can be classed into three main types of data integrity; entity integrity, referential integrity and domain integrity.
 
-###### Entity Integrity
+#### Entity Integrity
 
 Entity Integrity ensures that the identity of a table is unique. To do this a unique primary key ID is recorded against a models unique name. A primary key cannot be null and must be recored. In the instance of a User table the primary key would be recorded in the database as "user_id".
 
-###### Referential Integrity
+#### Referential Integrity
 
 Referential Integrity protects the integrity of relationships between tables. A table can share a relationship with another table by storing its foreign key ID which relates to a certain primary key ID (from another table). With Referential Integrity a table can access data from another table it relates to. Dependency rules can also be applied to relational databases in the event data is deleted from certain tables, for example if a user deletes their account all their relating data would also be deleted (posts, comments, photos, etc...)
 
-###### Domain Integrity
+#### Domain Integrity
 
 Domain Integrity implies that all columns in a relational database must belong to a domain. A domain refers to a set of values which are of the same type. Declaring a domain within a column avoids human errors and ensures data is recorded as intended. Taking the example of a User table which would store a user's full name, email and password, the domain for all three would be declared as "String", however if the table stored data such as a user's date of birth the domain in this instance could be declared as "Date".
 
-### Q11. Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. 
+## Q11. Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. 
 
 A relational database model should be able to provide functionalities which enable it to manipulate data. Four basic functionalities a model must have are commonly known as CRUD, a model should be able to Create, Read, Update and Delete data. If an action cannot be performed by one of these functions then we should consider creating a model for that particular action. 
 
 The CRUD framework is commonly used as a guide for developers to build full functioning models within an application. If we took the example of building a book store application the CRUD framework would function as follows:
 
-###### CREATE
+#### CREATE
 
 The Create function would be called when a new book is created and added to the book store. The application would record the data of the new book (e.g "Title", "Author", "Genre", "Price") and store it within the database with its own unique ID, which can be used to access the resource after it has been created.
 
-###### READ
+#### READ
 
 The Read function allows to retrieve the data of an existing book. This function does not change the data in anyway it simply displays existing resources. With Read, the application can display the full list of books available on the book store app or it can display any particular book at a time by calling its unique ID (which was assigned by the Create function).
 
-###### UPDATE
+#### UPDATE
 
 The Update function enables data of a particular book to be updated and saved to the database. By calling a unique book ID we can amend the required values which would then be saved to the database. 
 
-###### DELETE
+#### DELETE
 
 The Delete function allows to remove a unique book ID from the database. Once the delete function is delcared on a unique book ID it will no longer exist in the database and won't appear in the list of books. 
 
 
-### Q12. Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O)	
+## Q12. Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O)	
 
 An algorithm as a whole can be defined as a set of steps which are taken to sort a problem. Sorting algorithms are used to manage data in Computer Programming by evaluating a list of data and sorting it in a specified order (e.g from smallest to largest). With sorting algorithms we can determine not only the steps it will take to solve a problem but also the complexity of solving it. In determining which sorting algorithm to use within a program we also need take into account not only its efficiency but the time it will take to run through a set of data to return a value. 
 
@@ -195,13 +195,13 @@ Commonly used sorting algorithms are Quick Sort, Bubble Sort, Merge Sort, Insert
 
 In order to understand the way sorting algorithms work we will discuss the workings of Bubble Sort and Merge Sort and compare their performance and efficiency:
 
-#### Bubble Sort - Big O Complexity O(n2) 
+### Bubble Sort - Big O Complexity O(n2) 
 
 Bubble Sort is considered one of the most basic sorting algorithms. It essentially compares an array of elements by running through each element and comparing it to its direct neighbour then swapping those two elements if the left element is greater than the one on the right. It will continue comparing through the array until it reaches the last element and no more swaps are needed. The overall functioning of Bubble Sort is that it uses comparisons to sort elements from smallest to largest. In some cases where we would only be able to access data by running through an array from start to finish and only having access to two values at a time Bubble Sort would be the most efficient sorting algorithm known to solve a problem or to manage data, however the downfall of using Bubble Sort in other cases would be the time it would take to run a Bubble Sort in comparison to other sorting algorithms. For example, comparing 100 integers using a Merge Sort would only require an average of 770 steps as opposed to approximately 5,000 steps to run a Bubble Sort on the same set of integers. The worst case run time complexity of a Bubble Sort is O(n2) meaning it executes a set of actions up to n times for an n sized data set placing it under a Merge Sort in the table of Big O complexity (longer sorting complexity than Merge Sort). O(n2) complexity is often found in nested loops.
 
 To give an idea of how a bubble sort would work using Ruby as our programming language, the below code snippet, written by Maynard Cabalitan (https://coderwall.com/p/ssdcua/bubble-sort-in-ruby), defines a method "bubble_sort" which takes an unsorted "array" as an argument runs through the array comparing two elements at a time from left to right, swapping them in order of smallest to largest and then stopping when it reaches the last element of the array and all elements are sorted.  
 
-``` 
+```ruby 
     
   def bubble_sort(array_element)
       num = array_element.length
@@ -224,34 +224,34 @@ To give an idea of how a bubble sort would work using Ruby as our programming la
 
 ```
 
-#### Merge Sort - Big O Complexity O(n logo n)
+### Merge Sort - Big O Complexity O(n logo n)
 
 Merge Sort is based on the divide and conquer pattern which was invented by John von Neumann in 1945. Essentially a merge sort would take an unsorted array of integers, divide it into two or more subarrays then sort each subarray individually before merging all subarrays into one sorted array. Merge Sort is considered to be one of the most efficient sorting algorithms and performs consistently with a run time complexity of O(n log n) even with very large data sets. 
 
 How does a Merge Sort work? A Merge Sort can be visualised as a Tree, we would work our way from the top of the Tree by dividing an input array into subarrays, then again divide the subarrays until we reach the bottom of the tree where we would sort and merge the subarrays into one sorted array (top-down merge sort implementation). The following image shows a visual example of how a Merge Sort works from top to bottom, here we have an array input of numbers [7, 3 , 5, 2, 4, 1, 8, 6] which we initially divide into two subarrays, then these two arrays are divided again and then once more until we reach the middle of the tree where we have a list of individual arrays [7], [3], [5], [2], [4], [1], [8], [6], that we compare to each other, sort in order and continue to merge together until we reach a fully sorted array of all items [1, 2, 3, 4, 5, 6, 7, 8].
 
 ![Merge Sort Example](./docs/example-merge-sort.png)
-##### Picture from AlgoTree - https://algotree.org/algorithms/sorting/mergesort/
+Image source - https://algotree.org/algorithms/sorting/mergesort/
 
 In conclusion, which one should we choose over the other? Analysing the time complexity of both sorting algorithms we can determine that Bubble Sort would quickly become inefficient with larger sets of data as it would take longer to solve a problem, whereas Merge Sort seems to be the best option when working with bigger sets of data and performs better in time complexity run time than Bubble Sort. 
 
-### Q13. Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+## Q13. Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
 
 As previously described, algorithms are a set of steps executed to solve a problem. In the case of search algorithms we are describing a set of steps that are executed to find a value in a group of things. There are several different types of search algorithms such as Jump Search, Interpolation Search, Exponential Search, Fibonacci Search, Sublist Search, and the two main search algorithms commonly used, Linear Search and Binary Search which we will describe and compare their performance and efficiency:
 
-#### Linear Search - Big O Complexity O(n)
+### Linear Search - Big O Complexity O(n)
 
 A Linear Search works by searching through elements of a list by searching one element at a time without skipping any elements. We can visualise a Linear Search as reading through a book in which we are searching for something in particular with no table of contents to guide us, we would have to read through the whole book until we find that specific item it is that we are looking for. In computer programming, a Linear Search would work by going through a set of array elements from the leftmost element of the array and compare each item of the array with the element we are searching for and continue as such until a match is found. Taking into consideration that a Linear Search doesn't skip any elements in a list when searching makes its worse run time complexity O(n) which quickly makes it an inefficient search algorithm if we had a large set of data to search through and therefore making its performance ineffective in comparison to a Binary Search which significantly cuts down its run time complexity which we will discuss further below.
 
-#### Binary Search - Big O Complexity O(log n)
+### Binary Search - Big O Complexity O(log n)
 
 A Binary Search shares similarities with a Merge Sort, except a Binary Search will start searching from the middle of a sorted list and determine if the value that you are looking for is greater than or less than the value on the left half or right half. Once it has determined if the value is on the left or the right half, it will then search from the middle of that half and again proceeds to comparing if the element on the left or the right is greater than or less than the value that you are looking for. The process continues as such until it reaches a matched value. The only downfall to using a Binary Search in comparison to a Linear Search is that the set input data must be sorted whereas with a Linear Search this is not required as it compares every element of an array. However, due to the fact that a Binary Search uses the divide method and only searches through half elements of an array, and then continues to divide until it finds a match, brings its run time complexity to O(log n) which is significantly lower than a Linear Search, especially with larger sets of data. 
 
 In conclusion, comparing both search algorithms and dependent on the type of input data that we are given to search through, a Binary Search could be more efficient in the event the data is already sorted and we are searching through a large set of data. However, given an unsorted, small to medium list a Linear Search would be the better option. 
 
-##### Example of a Binary Search
+#### Example of a Binary Search
 
-```
+```ruby
 
   #taking an array of integers and comparing it to the target num
   #the code below runs through nested loops giving it a complexity run time of O(log n)
@@ -281,11 +281,12 @@ In conclusion, comparing both search algorithms and dependent on the type of inp
 
 ```
 
-##### Example of a Linear Search
+#### Example of a Linear Search
 
 We could write the following pseudo code for a basic Linear Search
 
-```
+```ruby
+
   # taking an array of integers from 0 to 10, if n is equal to 1 return "match found", 
   # else continue to compare with the next integer - Big O complexity O(n)
 
@@ -300,7 +301,7 @@ We could write the following pseudo code for a basic Linear Search
 
 Or basic Ruby code
 
-```
+```ruby
 
   def target(array, target)
     count = 0
@@ -313,7 +314,7 @@ Or basic Ruby code
 
 ```
 
-### Q14. Airbnb marketplace application research 
+## Q14. Airbnb marketplace application research 
 
 ![Airbnb-logo](./docs/airbnb-logo.png)
 #### Airbnb History
@@ -322,64 +323,64 @@ Airbnb is a popular two sided marketplace application which was founded in 2008 
 
 ![Airbnb-Interface](./docs/airbnb-marketplace.png)
 
-#### a. Software used by Airbnb:
+### a. Software used by Airbnb:
 
-###### Ruby on Rails - Ruby Framework
+#### Ruby on Rails - Ruby Framework
 Ruby on Rails, often referred to as RoR, is a popular framework used by developers to build powerful and reliable web applications with a quick turnaround time. Rails uses Ruby as its programming language and is an open source platform. RoR uses the MVC structure (Model, View, Controller) and prefers convention over configuration. A great aspect of RoR is the many Gems available to use with the framework that significantly cut down on production time and overall make it a more secure framework to work with. 
 
-###### React - Javascript Framework
+#### React - Javascript Framework
 React is a Javascript library used to create interactive user interfaces. Initially all views in Airbnb were built solely with Rails however with the growth and popularity of the application React was introduced to maximise speed and fluidity to enable a more efficient and user friendly experience. React mainly works on the view component of the MVC framework of an application. With React, changing data and reloading web pages doesn't affect the application's performance and therefore makes it a more scalable framework to work with when building larger applications.
 
-###### Redux 
+#### Redux 
 Redux is a Javascript open source library used for all API data like authentication.
 
-###### Amazon S3 - Cloud Storage
+#### Amazon S3 - Cloud Storage
 
 Through its web server interface, Amazon S3 (Amazon Simple Storage) offers an object storage service which allows for a more efficient scalability, security and performance of an application.
 
-###### Amazon RDS - Cloud Database
+#### Amazon RDS - Cloud Database
 Amazon RDS(Relational Database Service) is used to store and operate a relational database in the cloud. 
 
-###### Amazon EBS 
+#### Amazon EBS 
 Amazon EBS (Elastic Book Store) is used by Amazon's Relational Database Service and provides a more efficient storage performance. 
 
-###### MySQL - Database
+#### MySQL - Database
 MySQL is the most popular database management system mainly due to its high performance and scalability. It is commonly used for web databases to store any kind of data, varying from small records of data to a whole inventory of data used within e-commerce applications.
 
-###### Redis - Key-Value Storage 
+#### Redis - Key-Value Storage 
 Redis is used to manipulate data stored within a database. It can be used to add values to hashes, append elements to a string, sorting values in the right order or retrieving values from a list. 
 
-###### Presto, Druid, Airpal - Analytics
+#### Presto, Druid, Airpal - Analytics
 Presto, Druid and Airpal are open source tools that work together to analyse user data and application queries. 
 
-###### Amazon ElastiCache
+#### Amazon ElastiCache
 Amazon ElastiCache enables to speed the performance of an application through cache and in-memory storage of data and queries.
 
-###### GraphQuery
+#### GraphQuery
 GraphQuery is a powerful web developer tool used to query existing data with the applications APIs  
 
-###### Hypernova - Javascript View Server
+#### Hypernova - Javascript View Server
 Hypernova is used in the new configuration of Airbnb to server-render React to enable a better user experience. Using Hypernova also allows the user to view the content faster and is an efficient way for search engines to index an application. 
 
-#### b. Hardware used to host the Airbnb
+### b. Hardware used to host the Airbnb
 
-###### Nginx - Web Server
+#### Nginx - Web Server
 Nginx is a high performing web server which revolutionised the way servers operate with large numbers of concurrent connections. It is known to be the highest performing web server and overtakes Apache and other popular servers due to its scalability and efficiency when working with dynamic web pages and modern web interfaces. Nginx supports all components of modern web environments such as HTTP/2, WebSockets and streaming of a wide variety of video formats.  
 
-###### Amazon EC2 - Cloud Hosting
+#### Amazon EC2 - Cloud Hosting
 Amazon EC2 (part of Amazon Web Service) also known as Amazon Elastic Compute Cloud, works as a hosting provider which allows its users to run and operate their website and applications online by renting their virtual computers. Using Amazon EC2 allows developers to deploy their applications faster without the need to invest in server hardware and provides a secure web environment to manage application storage. It is also very efficient for growing applications with increased traffic loads as it automatically changes the system requirements to adapt to an application's growth, therefore removes the need to forecast traffic. 
 
 #### c. Interaction of technologies within Airbnb
 
-###### Backend and Frontend
+#### Backend and Frontend
 
 Ruby on Rails was used to build the MVC framework and the backend of Airbnb, it uses Ruby as its programming language. The application's routes, controllers, models and schema are created using Rails and the view with React which was later introduced to speed up the application interface. React uses Javascript as its programming language and allows for powerful interactive user interfaces, it also works well with modern websites and browsers. Airbnb views are created in React with Javascript, HTML5, CSS and SASS. Airbnb's MVC framework interacts with the web browser which sends route requests to the applications controller actions which then interact with the models and the views to either return information to the user or to store data information in the database. 
 
-###### Database Management
+#### Database Management
 
 MySQL acts as a database management system for Airbnb which also works with Amazon RDS. Amazon RDS stores and operates the application's relational database in the cloud. Redis is also used in conjuction with MySQL and Amazon RDS to manipulate stored data.
 
-###### Application Programming Interface
+#### Application Programming Interface
 
 Airbnb utilises multiple API's (Application Programming Interface) which interact with the application. The main APIs used are: 
 
@@ -389,7 +390,7 @@ Airbnb utilises multiple API's (Application Programming Interface) which interac
   * Google Maps API - enables users to view where rental listings are located on the map 
   * Jumio Netverify - enables identity verification of users by providing card and ID scanning facilities within the application.
 
-###### Cloud Based Services
+#### Cloud Based Services
 
 Airbnb is a large cloud based application who's reliability and scalability heavily depend on Amazons Web Services and predominately uses the following Amazon Web Services which interact with the application:
 
@@ -398,106 +399,106 @@ Airbnb is a large cloud based application who's reliability and scalability heav
   * Amazon EC2 provides hosting for the application
   * Amazon Cloud Front is a content delivery network which caches bulky content such as large images, videos and therefore improves the application speed when loading pages and downloading content.
 
-###### Data Analytics and Tracking
+#### Data Analytics and Tracking
 
 Finally, data analytics are tracked within the application mainly using Airpal, Presto and Druid which work together to manage large amounts of data. Google Analytics and Google Conversion Tracking are also used to interact with the application to measure its popularity amongst users and to track visitor counts. 
 
-#### d. How data is structured within Airbnb
+### d. How data is structured within Airbnb
 
 Airbnb structures its data in a relational database schema. A relational database consists of tables that store data within the database or which are able to retrieve data from the database. A table is made of rows and columns which specify the data type to be stored. For example we would have a table "User" which would store a user's full name as a string, email as a string, password as a string, date of birth as date and any other relevant data for that table. A relational database can contain as many tables as necessary for the application but can also form joined tables which enables to create relationships between tables. In the instance of the User table we could also relate this table to the Booking, Listing and Review tables and taking into account that these tables also relate to each other in some way we would potentially have a Booking-Listing join table or Listing-Review join table. The relational database structure allows to retrieve data from tables that relate to each other and avoids having to write more lines of code than needed, this is referred to as the DRY principles.
 
-#### e. Entities which must be tracked by Airbnb
+### e. Entities which must be tracked by Airbnb
 
 Airbnb's entities are tracked using Rail's Active Records which enables to build application Models and associate relationships between them. Active Records allows for a smooth transition of data between Models and reduces the amount of code within an application (keeping our code DRY). 
 
 The following entities are tracked in Airbnb:
 
-###### Users (user first name, user last name, email, password,)
+#### Users (user first name, user last name, email, password,)
 
   * Users of Airbnb can sign up and create an account to become either a Host or a Guest
   * Users are given a role of either a Host or Guest 
   * Users identities are confirmed using Jumio Netverify which scans the user's ID
 
-###### Roles (Guest, Host)
+#### Roles (Guest, Host)
 
 Because Airbnb is a two-sided marketplace its users can be assigned a role of either Guest or Host. A Guest can view listings available for rent, can make bookings and can leave reviews on listings. A Host can add rental listings to their account and can leave reviews on users that have rented their listings.
 
-###### Rental Listings (listing type, price, calendar availability, location, pictures with Active Storage)
+#### Rental Listings (listing type, price, calendar availability, location, pictures with Active Storage)
 
 Each lisiting provides details on its amenities (e.g accommodation type - house, appartment, studio etc.., number of beds, shared appartment/house, whole appartment/house), price, availability, location, and pictures are available to view.
 
-###### Listing Type (appartment, house, townhouse, studio, whole or partly rented)
+#### Listing Type (appartment, house, townhouse, studio, whole or partly rented)
 
 Each Rental Listing has is also a Listing Type, because there are several listing types that can be available it can form its own database table. 
 
-###### Bookings (date(calendar), check-in, check-out)
+#### Bookings (date(calendar), check-in, check-out)
 
   * Hosts can make their listings available for bookings.
   * Guests can make a booking on a listing. 
 
-###### Reviews (user review, listing review)
+#### Reviews (user review, listing review)
 
   * Guests are invited to leave a review on a listing after they have checked-out.
   * Hosts are invited to leave a review about a Guest after they have checked-out.
 
-###### Location (Region, Suburbs)
+#### Location (Region, Suburbs)
 
 Users can view where listings are located or search for listings by either their region or specific suburb.
 
   * Region (main city location of a listing)
   * Suburb (narrows down the location of a listing)
 
-#### f. Relationships and associations between the entities identified in part (e)
+### f. Relationships and associations between the entities identified in part (e)
 
 The below relationships and associations are formed between the application's entities:
 
-###### User Table
+#### User Table
 
     User has zero or many Bookings (dependent destroy) => Guest User
     User has zero or many Reviews (dependent destroy) => Both Host and Guest User
     User has one or many listings (dependent destroy) => Host User
     User has one or many Roles => Guest, Host
 
-###### Role Table
+#### Role Table
 
     After user registration a user is assigned a role => Guest or Host 
     Role belongs to User through User-Role
 
-###### User-Role
+#### User-Role
 
     User-Role has one or many Roles
     User-Role has one or many Users
 
-###### Booking-Listing Table
+#### Booking-Listing Table
 
     Booking-Listing belongs to one or many Users through User-Roles
     Booking-Listing has one or many Rental Listings
     Booking-Lisitng has one or many Bookings
     Booking-Listing has one or many Reviews
 
-###### Booking Table
+#### Booking Table
 
     Booking belongs to User through Booking-Listing (dependent destroy)
     Booking belongs to Rental Listing through Booking-Listing (dependent destroy)
 
-###### Rental Listing Table
+#### Rental Listing Table
 
     Rental Listing belongs to User with host role (dependent destroy)
     Rental Listing has one Listing Type
     Rental Listing has one or many Bookings through Booking-Listing
     Rental Listing has one or many Pictures through Active Storage
 
-###### Listing Type
+#### Listing Type
 
     Listing Type belongs to Rental Listing (dependent destroy)
 
-###### Review Table
+#### Review Table
 
     Review belongs to User through Booking-Listing
     Review belongs to Rental Listing through Booking-Listing 
 
 
-#### g. Interpreted Entity Relationship Diagram (ERD) appropriate for the database of Airbnb
+### g. Interpreted Entity Relationship Diagram (ERD) appropriate for the database of Airbnb
 
 The below Entity Relationship Diagram represents a visual representation of the potential schema design of Airbnb's database.
 
@@ -505,7 +506,7 @@ The below Entity Relationship Diagram represents a visual representation of the 
 
 ___
 
-### References
+## References
 
 * Matthew Main, Rails Request-Response Cycle - https://medium.com/@matthewmain/rails-request-response-cycle-819e9cd8fa4e 
 
